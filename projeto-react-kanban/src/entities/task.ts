@@ -1,9 +1,11 @@
-export type taskPriority = 'low' | 'medium' | 'high'
-export type taskStatus = 'todo' | 'doing' | 'done'
+export type TaskPriority = "low" | "medium" | "high"
+
+export type TaskStatus = "todo" | "doing" | "done"
+
 export interface Task {
-    id: number
-    title: string
-    description: string
-   priority:taskPriority
-   status:taskStatus
+  id: string
+  title: string
+  description: string
+  status: TaskStatus
+  priority: TaskPriority
 }
